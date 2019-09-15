@@ -26,7 +26,8 @@ parser.add_argument('--dataset', default='cifar10', type=str,
 parser.add_argument('--batch-size', type=int, default=100, metavar='N',
                     help='input batch size for training (default: 64)')
 parser.add_argument('--num_classes', type=int, default=10)
-parser.add_argument('--num_meta', type=int, default=10)
+parser.add_argument('--num_meta', type=int, default=10,
+                    help='The number of meta data for each class.')
 parser.add_argument('--imb_factor', type=float, default=0.1)
 parser.add_argument('--test-batch-size', type=int, default=100, metavar='N',
                     help='input batch size for testing (default: 100)')
